@@ -17,6 +17,7 @@ const withList = (ListComponent) => {
                 this.setState({items});
             }, 500)
         }
+        
         render() {
             const { items } = this.state;
             const { header } = this.props;

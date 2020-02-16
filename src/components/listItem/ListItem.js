@@ -4,7 +4,6 @@ import ItemDetail from '../ItemDetail';
 import './ListItem.css';
 import { withList } from '../hocHelpers';
 
-
 const ListItem = ({ items, header, children }) => {
     const detailData = items.map(item => {
         return (
@@ -12,14 +11,12 @@ const ListItem = ({ items, header, children }) => {
                { children }
             </ItemDetail>
         )
-
     })
     return (
         <div className="list-item">
             { detailData }
         </div>
     )
-
 }
 
 ListItem.propTypes = {
@@ -27,4 +24,3 @@ ListItem.propTypes = {
 }
 
 export default withList(ListItem);
-
