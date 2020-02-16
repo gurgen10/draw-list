@@ -14,6 +14,7 @@ const ListItem = ({ items, header, children }) => {
     })
     return (
         <div className="list-item">
+            <h2>{header}</h2>
             { detailData }
         </div>
     )

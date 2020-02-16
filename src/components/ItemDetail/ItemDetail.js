@@ -18,7 +18,7 @@ export default function ItemDetail({item, header, children}) {
         <Card style={{ width: '18rm', margin: '10px'}}>
             
             <Card.Body>  
-            <Card.Title >{ header }</Card.Title>
+            <Card.Title >{ item.details.name }</Card.Title>
             <Card.Subtitle className="mb-3 text-muted">{ cardText }</Card.Subtitle>
             <Row>
             <Col className='md-3' xs="3">
