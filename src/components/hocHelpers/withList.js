@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import Loading from '../Loading';
-import DataService from '../../service/ListDataService';
 
 const withList = (ListComponent) => {
     return class extends Component {
-        dataservice = new DataService();
-
         state = {
             items: null,
         }
